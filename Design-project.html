@@ -27,30 +27,101 @@
     }
 
     @media screen and (max-width: 576px) {
-    h1{
-      font-weight: bolder;
-      text-align: center;
-    }
-    }
-
-    @media (min-width: 576px) {
-
-      .ml-auto-sm {
-        margin-left: auto;
+      h1 {
+        font-size: 64px;
+        font-weight: bolder;
+        text-align: center;
       }
 
-      .order-6 {
+      h2 {
+        font-weight: bolder;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 2em;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .circles{
+        display: flex;
+        flex-direction: row;
         width: 100%;
+        flex-wrap: wrap;
+        background: darkorange;
+        font-weight: bolder;
+        font-size: 28px;
+      }
+
+      .circles p:nth-child(1) {
+        width: 30%;
+        border-radius: 55%;
+        border: 8px solid #f0f0f0;
+        background: #E6563B;
+        padding: 2.2em 0;
+        text-align: center;
+        color: #f0f0f0;
+        margin: .25em;
+
+      }
+
+      .circles p:nth-child(2) {
+        width: 30%;
+        border-radius: 55%;
+        border: 8px solid #f0f0f0;
+        background: #EB9D3A;
+        padding: 2.2em 0;
+        text-align: center;
+        color: #f0f0f0;
+        margin: 0 .25em;
+      }
+
+      .circles p:nth-child(3) {
+        width: 30%;
+        border-radius: 55%;
+        border: 8px solid #f0f0f0;
+        background: #7CB06C;
+        padding: 2.2em 0;
+        text-align: center;
+        color: #f0f0f0;
+        margin: 0 .25em;
+      }
+
+      .circles p:nth-child(4) {
+        width: 30%;
+        border-radius: 55%;
+        border: 8px solid #f0f0f0;
+        background: #00ABA9;
+        padding: 2.2em 0;
+        text-align: center;
+        color: #f0f0f0;
+        margin: 0 .25em;
       }
 
     }
 
-    @media (min-width: 770px ) {
-      .order-6 {
-        width: auto;
+      @media (min-width: 576px) {
+
+        .ml-auto-sm {
+          margin-left: auto;
+        }
+
+        .order-6 {
+          width: 100%;
+        }
+
       }
 
-    }
+      @media (min-width: 770px ) {
+        .order-6 {
+          width: auto;
+        }
+
+      }
 
 
     /*// Medium devices (tablets, 768px and up)*/
@@ -150,7 +221,14 @@
   <div class="container-intro">
     <section class="Intro-header">
       <h1>VISUAL DESIGN & WEB DEVELOPMENT</h1>
+      <h2>FROM PARK CITY, UTAH</h2>
     </section>
+  </div>
+  <div class="circles">
+    <p>DESIGN</p>
+    <p>DEVELOP</p>
+    <p>SUPPORT</p>
+    <p>HOST</p>
   </div>
   <hr>
 </header>
