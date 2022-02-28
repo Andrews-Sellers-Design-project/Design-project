@@ -26,6 +26,11 @@
       order: 6;
     }
 
+    ul a{
+      text-decoration: none;
+      color: black;
+    }
+
     @media screen and (max-width: 576px) {
       .logo {
         height: 200px;
@@ -44,10 +49,14 @@
       /*  left: 9em;*/
       /*}*/
 
+
       h1 {
         font-size: 64px;
         font-weight: bolder;
         text-align: center;
+        width: 80%;
+        margin-left: .55em;
+
       }
 
       h2 {
@@ -145,7 +154,7 @@
 
       }
       .phoneFooter p:nth-child(1){
-        flex-grow: .5;
+        flex-grow: .55;
 
 
       }
@@ -277,6 +286,8 @@
       font-size: 50px;
       text-align: center;
       display: block;
+      margin-right: .5em;
+    }
   </style>
 </head>
 <body>
@@ -301,7 +312,7 @@
   </nav>
   <div class="container-intro">
     <section class="Intro-header">
-      <h1>VISUAL DESIGN & WEB DEVELOPMENT</h1>
+      <h1 class="d-flex flex-wrap">VISUAL DESIGN & WEB DEVELOPMENT</h1>
       <h2>FROM PARK CITY, UTAH</h2>
     </section>
   </div>
