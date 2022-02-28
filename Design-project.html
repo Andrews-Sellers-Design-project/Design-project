@@ -15,7 +15,7 @@
       position: relative;
     }
 
-    nav > ul {
+    .titleHeader > ul {
       list-style-type: none;
       border:0;
       padding-top: 30px;
@@ -27,6 +27,23 @@
     }
 
     @media screen and (max-width: 576px) {
+      .logo {
+        height: 200px;
+        width: 200px;
+      }
+
+      .titleHeader{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 2em;
+        margin: 3em;
+      }
+      /*.icon{*/
+      /*  position: relative;*/
+      /*  left: 9em;*/
+      /*}*/
+
       h1 {
         font-size: 64px;
         font-weight: bolder;
@@ -52,25 +69,28 @@
         flex-direction: row;
         width: 100%;
         flex-wrap: wrap;
-        background: darkorange;
+        /*background: darkorange;*/
         font-weight: bolder;
         font-size: 28px;
+        position: relative;
+        left: 1.3em;
+        margin-bottom: 5em;
+
       }
 
       .circles p:nth-child(1) {
-        width: 30%;
+        width: 40%;
         border-radius: 55%;
         border: 8px solid #f0f0f0;
         background: #E6563B;
-        padding: 2.2em 0;
         text-align: center;
         color: #f0f0f0;
-        margin: .25em;
-
+        margin: 0 .25em;
+        padding: 2.2em 0em;
       }
 
       .circles p:nth-child(2) {
-        width: 30%;
+        width: 40%;
         border-radius: 55%;
         border: 8px solid #f0f0f0;
         background: #EB9D3A;
@@ -81,25 +101,85 @@
       }
 
       .circles p:nth-child(3) {
-        width: 30%;
-        border-radius: 55%;
+        width: 40%;
+        border-radius: 50%;
         border: 8px solid #f0f0f0;
         background: #7CB06C;
-        padding: 2.2em 0;
+        padding: 2.2em 1em;
         text-align: center;
         color: #f0f0f0;
-        margin: 0 .25em;
+        margin: .5em .25em;
       }
 
       .circles p:nth-child(4) {
-        width: 30%;
-        border-radius: 55%;
+        width: 40%;
+        border-radius: 50%;
         border: 8px solid #f0f0f0;
         background: #00ABA9;
         padding: 2.2em 0;
         text-align: center;
         color: #f0f0f0;
-        margin: 0 .25em;
+        margin: .5em .25em;
+      }
+
+      .appleIpad{
+        margin: auto;
+        border: 10px solid #f0f0f0;
+        border-radius: 5px;
+      }
+      section > p{
+        position: relative;
+        left: 3em;
+      }
+
+      .phoneFooter{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        position: relative;
+        right: 1em;
+      }
+
+      .phoneFooter > p{
+        padding: 1em;
+
+      }
+      .phoneFooter p:nth-child(1){
+        flex-grow: .5;
+
+
+      }
+      .phoneFooter p:nth-child(2){
+        background: #e6563b;
+        border-radius:50%;
+        padding: .20em .6em;
+        text-align: center;
+        margin: .3em;
+
+      }
+      .phoneFooter p:nth-child(3){
+        background: #dea03d;
+        border-radius:50%;
+        padding: .20em .6em;
+        text-align: center;
+        margin: .3em;
+
+      }
+      .phoneFooter p:nth-child(4){
+        background: #7CB06C;
+        border-radius:50%;
+        padding: .20em .6em;
+        text-align: center;
+        margin: .3em;
+
+      }
+      .phoneFooter p:nth-child(5){
+        background: #00aba9;
+        border-radius:50%;
+        padding: .20em .6em;
+        text-align: center;
+        margin: .3em;
+
       }
 
     }
@@ -174,7 +254,7 @@
 
     .bg-container {
       border-top: 55px solid #f0f0f0;
-      background-color: #ffffff;
+      background-color: #f0f0f0;
       height: 125px;
       width: 100%;
       margin:0;
@@ -187,10 +267,10 @@
     }
 
 
-    .logo {
-      height: 105px;
-      width: 105px;
-    }
+    /*.logo {*/
+    /*  height: 105px;*/
+    /*  width: 105px;*/
+    /*}*/
 
     .logo-text {
       font-family: 'Abel', sans-serif;
@@ -208,15 +288,16 @@
 
   <!--   Nav Start     -->
   <nav class="m-auto">
-    <!--    The order of some nav elements will change depending on the viewport size     -->
-    <ul class="d-flex flex-row flex-sm-row ml-auto-sm mr-auto-sm flex-md-row align-items-center flex-wrap flex-sm-wrap justify-content-center justify-content-md-start ">
-      <li class="p-2 order-md-1 order-sm-3 order-3"><img src="img/assets/logo.png" class="logo"></li>
-      <li class="p-2 order-md-3 order-sm-8 order-6 wrap-it"><span class="logo-text">codeup design</span></li>
-      <li class="ml-auto-md p-2 order-md-3 order-sm-1 order-1 text-uppercase" ><a href="#"> Services</a></li>
-      <li class="p-2 order-md-4 order-sm-2 order-2 text-uppercase"><a href="#">Work</a> </li>
-      <li class="p-2 order-sm-4 order-4 text-uppercase"><a href="#">Blog</a></li>
-      <li class="p-2 order-sm-5 order-5 text-uppercase"><a href="#">Contact</a></li>
-    </ul>
+    <div class="titleHeader">
+      <ul class="titleArea d-flex flex-row flex-sm-row ml-auto-sm mr-auto-sm flex-md-row align-items-center flex-wrap flex-sm-wrap justify-content-center justify-content-md-start ">
+        <li class="p-2 order-md-1 order-sm-3 order-1"><img src="img/assets/logo.png" class="logo"></li>
+        <li class="p-2 order-md-3 order-sm-8 order-2 wrap-it"><span class="logo-text">codeup design</span></li>
+        <li class="ml-auto-md p-2 order-md-3 order-sm-1 order-3 text-uppercase" ><a href="#"> Services</a></li>
+        <li class="p-2 order-md-4 order-sm-2 order-4 text-uppercase"><a href="#">Work</a> </li>
+        <li class="p-2 order-sm-4 order-5 text-uppercase"><a href="#">Blog</a></li>
+        <li class="p-2 order-sm-5 order-6 text-uppercase"><a href="#">Contact</a></li>
+      </ul>
+    </div>
   </nav>
   <div class="container-intro">
     <section class="Intro-header">
@@ -230,9 +311,24 @@
     <p>SUPPORT</p>
     <p>HOST</p>
   </div>
-  <hr>
 </header>
 
+<section>
+
+<h5 class="text-center">SELECTED WORK</h5>
+
+<img class="appleIpad" src="img/images/apple-ipad.jpg" width="80%">
+
+</section>
+
+<section class="phoneFooter">
+  <p>FEATURED PRODUCT</p>
+  <p class="smallCircle">D</p>
+  <p class="smallCircle">D</p>
+  <p class="smallCircle">S</p>
+  <p class="smallCircle">H</p>
+
+</section>
 
 
 
