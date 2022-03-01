@@ -35,14 +35,17 @@
       .logo {
         height: 200px;
         width: 200px;
+        /*position: relative;*/
+        /*bottom: 4em;*/
       }
 
       .titleHeader{
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 2em;
+        bottom: 3em;
         margin: 3em;
+        margin-bottom: 0em;
       }
       /*.icon{*/
       /*  position: relative;*/
@@ -56,7 +59,6 @@
         text-align: center;
         width: 80%;
         margin-left: .55em;
-
       }
 
       h2 {
@@ -215,6 +217,90 @@
 
     /*// Medium devices (tablets, 768px and up)*/
     @media (min-width: 768px) {
+      .logo {
+        height: 100px;
+        width:100px;
+      }
+
+      .Intro-header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: center;
+      }
+
+      h2 {
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+        padding-top: .5em;
+      }
+
+      .circles{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        flex-wrap: nowrap;
+        font-weight: bolder;
+        font-size: 28px;
+        margin: auto;
+        justify-content: center;
+        position: relative;
+        bottom: 2em;
+      }
+
+      .circles p:nth-child(1) {
+        width: 10%;
+        border-radius: 50%;
+        border: 8px solid #f0f0f0;
+        background: #E6563B;
+        text-align: center;
+        color: #f0f0f0;
+        margin: 2.5em 1em;
+        padding:1em 2em;
+      }
+
+      .circles p:nth-child(2) {
+        width: 10%;
+        border-radius: 50%;
+        border: 8px solid #f0f0f0;
+        background: #EB9D3A;
+        padding: 1em 2em;
+        text-align: center;
+        color: #f0f0f0;
+        margin: 2.5em 1em;
+      }
+
+      .circles p:nth-child(3) {
+        width: 10%;
+        border-radius: 50%;
+        border: 8px solid #f0f0f0;
+        background: #7CB06C;
+        padding: 1em 2em;
+        text-align: center;
+        color: #f0f0f0;
+        margin: 2.5em 1em;
+      }
+
+      .circles p:nth-child(4) {
+        width: 10%;
+        border-radius: 50%;
+        border: 8px solid #f0f0f0;
+        background: #00ABA9;
+        padding: 1em 2em;
+        text-align: center;
+        color: #f0f0f0;
+        margin: 2.5em 1em;
+      }
+
+
+
       .ml-auto-md {
         margin-left: auto;
       }
@@ -262,8 +348,8 @@
 
 
     .bg-container {
-      border-top: 55px solid #f0f0f0;
-      background-color: #f0f0f0;
+      border-top: 55px solid #e6e6e6;
+      background-color: white;
       height: 125px;
       width: 100%;
       margin:0;
@@ -273,6 +359,9 @@
       position: absolute;
       opacity: 1;
 
+    }
+    body{
+      background-color: #e6e6e6;
     }
 
 
@@ -302,11 +391,11 @@
     <div class="titleHeader">
       <ul class="titleArea d-flex flex-row flex-sm-row ml-auto-sm mr-auto-sm flex-md-row align-items-center flex-wrap flex-sm-wrap justify-content-center justify-content-md-start ">
         <li class="p-2 order-md-1 order-sm-3 order-1"><img src="img/assets/logo.png" class="logo"></li>
-        <li class="p-2 order-md-3 order-sm-8 order-2 wrap-it"><span class="logo-text">codeup design</span></li>
+        <li class="p-2 order-md-2 order-sm-8 order-2 wrap-it"><span class="logo-text">codeup design</span></li>
         <li class="ml-auto-md p-2 order-md-3 order-sm-1 order-3 text-uppercase" ><a href="#"> Services</a></li>
         <li class="p-2 order-md-4 order-sm-2 order-4 text-uppercase"><a href="#">Work</a> </li>
-        <li class="p-2 order-sm-4 order-5 text-uppercase"><a href="#">Blog</a></li>
-        <li class="p-2 order-sm-5 order-6 text-uppercase"><a href="#">Contact</a></li>
+        <li class="p-2 order-sm-4 order-md-5 order-5 text-uppercase"><a href="#">Blog</a></li>
+        <li class="p-2 order-sm-5 order-md-6 order-6 text-uppercase"><a href="#">Contact</a></li>
       </ul>
     </div>
   </nav>
