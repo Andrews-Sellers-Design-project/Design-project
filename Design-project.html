@@ -97,7 +97,7 @@
         text-align: center;
         color: #f0f0f0;
         margin: 0 .25em;
-        padding: 2.2em 0em;
+        padding: 2.2em 0;
       }
 
       .circles p:nth-child(2) {
@@ -193,6 +193,10 @@
 
       }
 
+      hr{
+        display: none;
+      }
+
     }
 
       @media (min-width: 576px) {
@@ -248,12 +252,14 @@
         width: 80%;
         flex-wrap: nowrap;
         font-weight: bolder;
-        font-size: 28px;
+        font-size: 25px;
         margin: auto;
         justify-content: center;
         position: relative;
         bottom: 2em;
       }
+
+
 
       .circles p:nth-child(1) {
         width: 10%;
@@ -263,7 +269,7 @@
         text-align: center;
         color: #f0f0f0;
         margin: 2.5em 1em;
-        padding:1em 2em;
+        padding:1.5em 2.5em;
       }
 
       .circles p:nth-child(2) {
@@ -271,10 +277,10 @@
         border-radius: 50%;
         border: 8px solid #f0f0f0;
         background: #EB9D3A;
-        padding: 1em 2em;
         text-align: center;
         color: #f0f0f0;
         margin: 2.5em 1em;
+        padding: 1.5em 2.5em;
       }
 
       .circles p:nth-child(3) {
@@ -282,10 +288,10 @@
         border-radius: 50%;
         border: 8px solid #f0f0f0;
         background: #7CB06C;
-        padding: 1em 2em;
         text-align: center;
         color: #f0f0f0;
         margin: 2.5em 1em;
+        padding: 1.5em 2.5em;
       }
 
       .circles p:nth-child(4) {
@@ -293,10 +299,40 @@
         border-radius: 50%;
         border: 8px solid #f0f0f0;
         background: #00ABA9;
-        padding: 1em 2em;
         text-align: center;
         color: #f0f0f0;
         margin: 2.5em 1em;
+        padding: 1.5em 2.5em;
+      }
+
+
+      .image-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70%;
+      }
+      .image-section img {
+        width: 100%;
+      }
+      .image-section div{
+        width: 50%;
+        padding: 2em;
+        font-size: 10px;
+      }
+      .image-section ul{
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .article-links{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        align-items: start;
+      }
+      .bottom-header{
+        width: 100%;
       }
 
 
@@ -309,6 +345,12 @@
         width: 100%;
       }
 
+      .laptop{
+        display: none;
+      }
+      .phoneFooter{
+        display: none;
+      }
     }
 
 
@@ -412,8 +454,9 @@
     <p>HOST</p>
   </div>
 </header>
+<hr>
 
-<section>
+<section class="laptop">
 
 <h5 class="text-center">SELECTED WORK</h5>
 
@@ -429,6 +472,50 @@
   <p class="smallCircle">H</p>
 
 </section>
+<article class="bottom-half">
+  <section class="image-section">
+    <h5 class="bottom-header">SELECTED WORK</h5>
+    <div class="apples">
+      <img src="img/images/apple-ipad.jpg">
+      <ul class="d-flex flex-row">
+        <li>FEATURED PROJECT</li>
+        <li>D</li>
+        <li>D</li>
+        <li>S</li>
+        <li>H</li>
+      </ul>
+    </div>
+    <div class="computer">
+      <img src="img/images/macbook.jpg">
+      <p>FEATURED PROJECT</p>
+      <p>D</p>
+      <p>D</p>
+      <p>S</p>
+      <p>H</p>
+    </div>
+    <div class="man">
+      <img src="img/images/man.jpg">
+      <p>FEATURED PROJECT</p>
+      <p>D</p>
+      <p>D</p>
+      <p>S</p>
+      <p>H</p>
+    </div>
+    <div class="security">
+      <img src="img/images/security.jpg">
+      <p>FEATURED PROJECT</p>
+      <p>D</p>
+      <p>D</p>
+      <p>S</p>
+      <p>H</p>
+    </div>
+
+  </section>
+  <section class="article-links">
+
+  </section>
+
+</article>
 
 
 
